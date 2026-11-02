@@ -1,0 +1,140 @@
+/*
+
+.fira-mono-regular {
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-mono-medium {
+  font-family: "Fira Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fira-mono-bold {
+  font-family: "Fira Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-sans-medium {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+  
+.fira-sans-bold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+*/
+
+* {
+    --borderColors: #2a0800ff;
+    --base: #dedbd2ff;
+    --cardColors: #b0c4b1ff;
+    --accentColors: #4a5759ff;
+    color: white;
+    font-family: "Fira Mono", monospace;
+
+}
+
+body {
+    background-image: url(./assets/css-pattern-by-magicpattern.png);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 16px;
+    padding-bottom: 0px;
+}
+
+header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    font-family: "Fira Mono", monospace;
+    font-weight: 700;
+    color: var(--accentColors);
+    font-size: 32px;
+    background-color: var(--cardColors);
+}
+
+header::first-letter {
+    font-size: 60px;
+}
+
+.title {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 72px;
+    margin-bottom: 32px;
+    line-height: 84px;
+}
+
+.title::first-letter {
+    color: var(--accentColors)
+}
+
+h2 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    margin-bottom: 32px;
+    text-shadow: 2px 3px 3px var(--accentColors);
+}
+
+.cards div {
+    background-color: var(--cardColors);
+    padding: 16px;
+    border: .5px solid var(--borderColors);
+    border-radius: 4px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+
+    transition: all 1s;
+}
+.cards div:hover {
+    box-shadow: 8px 8px var(--accentColors);
+}
+
+.cards div > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 2px 1px 1px rgba(0,0,0,0.4);
+}
+
+.education > ul {
+    background-color: var(--cardColors);
+    font-size: 24px;
+    font-weight: 500;
+    list-style-image: url('./assets/arrow.svg');
+}
+
+.education > ul li {
+    padding: 16px;
+}
+
+.year {
+    color: var(--accentColors);
+}
+
+h3 {
+    font-family: "Fira Mono", monospace;
+    font-weight: 700;
+    font-size: 32px;
+    font-style: normal;
+}
