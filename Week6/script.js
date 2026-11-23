@@ -6,7 +6,7 @@ for(let x = 0; x < buttons.length; x += 1){
 document
     .getElementById("randsize")
     .addEventListener("click", function() {
-        let randfontsize = Math.random() * 100
+        let randfontsize = Math.floor(Math.random() * 100)
         for(let x = 0; x < buttons.length; x += 1){
             buttons[x].style.fontSize = randfontsize + "px"
         }
